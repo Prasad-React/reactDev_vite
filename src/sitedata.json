@@ -1,0 +1,316 @@
+{
+  "comment": "data for the project name with /DevServices/",
+ 
+        "BASE_URL" : "http://10.72.5.193:8090/api",
+
+    "Navbar":[
+      {
+         "imgsrc": "/images/delivery_truck.gif"
+      }
+
+    ],
+
+  "comment1": "Dummy Navbar Menu",
+
+  "menu": [
+    { "name": "Home", "link": "/", "type": "page" },
+    { "name": "About", "link": "/about", "type": "page" },
+    {
+      "name": "Join Us",
+      "type": "dropdown",
+      "children": [
+        { "name": "Careers", "link": "/apply", "type": "page" },
+        { "name": "Franchise", "link": "/project", "type": "page" },
+        { "name": "Reports", "link": "/application", "type": "page" }
+      ]
+    },
+    {
+      "name": "Transport",
+      "type": "dropdown",
+      "children": [
+        { "name": "Vehicles", "link": "/transport/vehicles", "type": "page" },
+        { "name": "Tracking", "link": "/transport/tracking", "type": "page" }
+      
+      ]
+    },
+      {
+      "name": "Support",
+      "type": "dropdown",
+      "children": [
+        { "name": "Support", "link": "/Contact_message", "type": "page" },
+        { "name": "Reports", "link": "/contact_report", "type": "page" }
+       
+      ]
+    },
+    { "name": "Contact", "link": "/contact", "type": "page" },
+     { "name": "Register", "link": "/register", "type": "page" },
+    { "name": "Login", "link": "/login", "type": "page" }
+  ],
+
+
+ "comment2": "Main Navbar Menu",
+
+"Navmenu": [
+    { "name": "Home", "link": "/", "type": "page" },
+    { "name": "Tables View", "link": "/Order", "type": "page" },
+    { "name": "D-Krishi", "link": "/Krishi", "type": "page" },
+    { "name": "FM", "link": "/FM", "type": "page" }
+],
+
+
+
+
+
+
+ "aboutus": [
+  {
+    "title": "About Us",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": ""
+      }
+   
+    ]
+  }
+],
+
+ "ContactUs": [
+  {
+    "title": "Contact Us",
+    "content": [
+       {
+        "address": "Vijayawada, Andhra Pradesh, India",
+        "contact":"9948505910",
+        "email":"prasad.oct29@gmail.com",
+         "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.4804313042255!2d80.61846017491654!3d16.506174884234038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fac52b5b6aa7%3A0x6dc3e93a049f23cf!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1695483626535!5m2!1sen!2sin"
+  }
+   
+    ]
+  }
+],
+
+ "comment3": "Header page details",
+
+  "Header": [
+      {
+        "img1": [
+          {
+            "imgsrc": "/images/gsmt.png",
+            "imgalt": "logo1",
+            "link": ""
+          }
+        ],
+        "header":"Department of Agriculture-NIC  ",
+        "heading": " Development Services",
+        "description": [
+          { "title": "  " }
+        ],
+        "img2": [
+          {
+            "imgsrc": "/images/transport.jpg",
+            "imgalt": "logo2",
+            "link": ""
+          }
+        ]
+      }
+    ],
+
+
+
+ 
+  "gallery": [
+    {
+       "heading":"Gallery",
+      "header": "Transport",
+      "img1": [
+        { "src": "/images/photo1.jpg", "alt": "Nature 1" },
+        { "src": "/images/photo2.jpg", "alt": "Nature 2" },
+        { "src": "/images/photo3.jpg", "alt": "Nature 3" }
+      ]
+    },
+    {
+      "header": "Ware House",
+      "img1": [
+        { "src": "/images/photo1.jpg", "alt": "City 1" },
+        { "src": "/images/photo2.jpg", "alt": "City 2" },
+        { "src": "/images/photo3.jpg", "alt": "City 3" }
+      ]
+    }
+  ],
+
+
+
+
+
+  "slides": [
+    {
+      "id": 1,
+      "title": "",
+      "description": "",
+      "image": "/images/slide1.png"
+    },
+    {
+      "id": 2,
+      "title": "",
+      "description": "",
+      "image": "/images/slide1.png"
+    },
+    {
+      "id": 3,
+      "title": "",
+      "description": "",
+      "image": "/images/slide2.png"
+    }
+  ],
+
+"comment4": "Sql editor page details",
+
+"sqlEditor": [
+  {
+    "title": "DB Explorer",
+    "isButton": false
+  },
+  {
+    "title": "Recently Used Query",
+    "isButton": false
+  },
+  {
+    "title": "Recently Used Tables",
+    "isButton": false
+  },
+  {
+    "title": "RUN",
+    "isButton": true
+  }
+  
+],
+"saveQuery": [
+  {
+    "title": "Load in Editor",
+    "isButton": false
+  },
+  {
+    "title": "View full Query",
+    "isButton": false
+  },
+  {
+    "title": "  Copy query",
+    "isButton": false
+  }
+ 
+],
+
+
+"saveQuery1": [
+
+  {
+    "title": "Report No.",
+    "para": false
+  },
+  {
+    "title": "Prepared By",
+    "para": false
+  },
+  {
+    "title": "Description",
+    "para": false
+  },
+    {
+    "title": "Date",
+    "para": false
+  },
+  {
+    "title": "Query",
+    "para": false
+  }
+ 
+],
+
+
+  "news": [
+    {
+      "title": "New Farmer Scheme Launched",
+      "date": "2025-01-15",
+      "description": "Government introduces a new subsidy program for small and marginal farmers."
+    },
+    {
+      "title": "Crop Insurance Updates",
+      "date": "2025-01-12",
+      "description": "New premium rates announced for Rabi season crops."
+    },
+    {
+      "title": "Weather Alert for Farmers",
+      "date": "2025-01-10",
+      "description": "Heavy rainfall expected in coastal regions. Advisory issued to farmers."
+    }
+  ],
+  "features": [
+    {
+      "name": "Soil Health Check",
+      "description": "Get detailed soil analysis and recommended nutrients.",
+      "icon": "🌱"
+    },
+    {
+      "name": "Fertilizer Calculator",
+      "description": "Calculate required fertilizer based on land area and crop type.",
+      "icon": "🧮"
+    },
+    {
+      "name": "Weather Forecast",
+      "description": "Accurate local weather and farming advice.",
+      "icon": "☁️"
+    }
+  ],
+
+
+     "Vehicle": [
+    {
+      "heading": "",
+      "detailservices": [
+      {
+      "header": "",
+      "p": "",
+      "Serial":"",
+      "VehicleType":"",
+      "Capacity":"",
+      "VechicleNo":"",
+      "paragraph":[ 
+  
+        { "Serial":1,
+          "VehicleType":"xx",
+          "Capacity":"xx",
+          "VechicleNo":"xx"
+        },
+        { "Serial":2,
+          "VehicleType":"xx",
+          "Capacity":"xx",
+          "VechicleNo":"xx"
+        },
+        { "Serial":3,
+          "VehicleType":"xx",
+          "Capacity":"xx",
+          "VechicleNo":"xx"
+        },
+           { "Serial":4,
+          "VehicleType":"xx",
+          "Capacity":"xx",
+          "VechicleNo":"xx"
+        },
+        { "Serial":5,
+          "VehicleType":"xx",
+          "Capacity":"xx",
+          "VechicleNo":"xx"
+        },
+        { "Serial":6,
+          "VehicleType":"xx",
+          "Capacity":"xx",
+          "VechicleNo":"xx"
+        }
+     ]
+    }
+  ]
+  }
+  ]
+
+}
