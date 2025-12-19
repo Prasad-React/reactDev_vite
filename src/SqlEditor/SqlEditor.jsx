@@ -123,19 +123,37 @@ const updateTabContent = (id, value) => {
 
 //   setIsLoading(false);
 // };
+
 const runQuery = async () => {
   const tab = tabs.find((t) => t.id === activeTabId);
   if (!tab) return;
 
-  const queryId = Math.random().toString(36).substring(2, 12); 
+  const editorView = tabEditorRefs.current[activeTabId]?.current;
+  let queryToRun = tab.content;
 
-  setIsLoading(true); 
+  // 🔥 GET SELECTED QUERY FROM CODEMIRROR
+  if (editorView) {
+    const selection = editorView.state.selection.main;
+
+    if (!selection.empty) {
+      queryToRun = editorView.state.doc
+        .sliceString(selection.from, selection.to)
+        .trim();
+    }
+  }
+
+  if (!queryToRun) {
+    alert("No query selected!");
+    return;
+  }
+
+  setIsLoading(true);
 
   try {
     const res = await fetch(`${BASE_URL}/execute`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ queryId, query: tab.content }),
+      body: JSON.stringify({ query: queryToRun }),
     });
 
     const data = await res.json();
@@ -143,11 +161,7 @@ const runQuery = async () => {
     setTabs((prev) =>
       prev.map((t) =>
         t.id === activeTabId
-          ? {
-              ...t,
-              result: data,
-              error: data.status === "error" ? data.message : null,
-            }
+          ? { ...t, result: data, error: data.status === "error" ? data.message : null }
           : t
       )
     );
@@ -155,9 +169,10 @@ const runQuery = async () => {
     console.error(err);
     alert("Query failed!");
   } finally {
-    setIsLoading(false); 
+    setIsLoading(false);
   }
 };
+
 
 
 // const stopQuery = async () => {

@@ -12,15 +12,15 @@ export default function Editor({ activeTab, updateTabContent, tabEditorRef }) {
         marginTop: 12,
       }}
     >
-      {activeTab ? (
+      {activeTab && (
         <CodeMirror
           value={activeTab.content}
-          onChange={(value) => updateTabContent(activeTab.id, value)}
           height="300px"
-          ref={tabEditorRef}
+          onChange={(value) => updateTabContent(activeTab.id, value)}
+          onCreateEditor={(view) => {
+            tabEditorRef.current = view; 
+          }}
         />
-      ) : (
-        <CodeMirror value={"select * from "} onChange={() => {}} height="300px" />
       )}
     </div>
   );
